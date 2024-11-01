@@ -1,0 +1,97 @@
+.background {
+  background-image: url(/images/achtergrond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: white;
+  padding-bottom: 1px;
+}
+
+.carousel-inner {
+  height: 0;
+  padding-bottom: 48.8%;
+}
+
+.carousel-item {
+  position: absolute !important;
+  top: 5px;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.outlinezwart {
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+.paddingleft {
+  padding-left: 100px;
+}
+
+.foto {
+  height: 80%;
+  padding-left: 120px;
+}
+
+@media (max-width: 1500px) {
+  .carousel-item {
+    bottom: 10%;
+  }
+  .paddingleft {
+    padding-left: 15%;
+  }
+  .paddingleft3 {
+    padding-left: 35%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .carousel-item {
+    bottom: 15%;
+  }
+  .paddingleft3 {
+    padding-left: 30%;
+  }
+  .foto
+  {
+    height: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  .carousel-item {
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .foto  {
+    height: 50%;
+  }
+}
+@media (max-width: 756px) {
+  .carousel-item {
+    bottom: 35%;
+  }
+  .paddingleft {
+    padding-left: 25%;
+  }
+  .paddingleft2 {
+    padding-left: 25%;
+  }
+  .paddingleft3 {
+    padding-left: 25%;
+  }
+  .foto 
+  {
+    height: 50%;
+  }
+}

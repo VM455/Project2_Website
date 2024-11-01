@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Mijn eigen portifilio website." />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="CSS/Stijl.css" />
+  </head>
+  <body class="background">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portifolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <h1 class="pt-4 display-3">Contact pagina</h1>
+      <p class="lead">
+        Neem contact op met mij!
+      </p>
+      <hr class="my-4 pb-3" />
+      <form method="post" action="https://tm-statweb.be/sendmail.php">
+        <div class="row">
+          <div class="col-md mb-3">
+            <label for="naam" class="form-label">Naam</label>
+            <input type="text" id="naam" class="form-control" name="naam" placeholder="John" required/>
+          </div>
+          <div class="col-md mb-3">
+            <label for="familienaam" class="form-label">familienaam</label>
+            <input type="text" id="familienaam" class="form-control" name="familienaam" placeholder="Smith" required/>
+          </div>
+        </div>
+        <div class="mb-3 ">
+          <label for="e-mail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="e-mail" name="e-mail" placeholder="JohnSmith@gmail.com" required>
+        </div>
+        <div>
+          <p>Waar bent u in geïnteresseerd?</p>
+          <select
+            class="form-select form-select-lg mb-3 mt-3"
+            aria-label="Large select example"
+          >
+            <option selected>Mijn skills</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Uw vraag</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <input type="hidden" name="studentemail" value="niels@tm.be">
+        <button type="submit" class="btn btn-primary">Verstuur</button>
+      </form>
+      <hr class="pb-3 mt-5" />
+      <h2 class="pt-4 display-5">Socials</h2>
+      <p class="lead">
+        Contacteer mij ook via:
+      </p>
+      <hr class="my-4 pb-3" />
+      <div class="row mb-5">
+        <div class="col-md paddingleft pt-3"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.jpg" alt="Instagram logo"></a></div>
+        <div class="col-md pt-3 paddingleft2"><a href="https://www.linkedin.com/in/vince-maegh-bb1bb2333/" target="_blank"><img src="images/LinkedIn.png" alt="Linked in logo"></a></div>
+        <div class="col-md pt-3 paddingleft3"><a href="mailto:r1056561@student.thomasmore.be" target="_blank"><img src="images/Outlook.png" alt="Outlook logo"></a></div>
+      </div>
+    </main>
+    <footer class="bg-dark text-center text-white py-3">
+      <p class="md-0">&copy; Copyleft - 2024 - Vince Maegh</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
